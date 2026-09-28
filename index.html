@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjoy specialty coffee at Resource Coffee House. Explore our drinks, desserts, and mobile app.">
+    <title>Coffee House</title>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icons/coffee-cup.svg" type="image/svg+xml">
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="assets/icons/logo.svg" alt="Resource Coffee House">
+            <img src="assets/icons/logo-dark.svg" alt="Resource Coffee House">
+        </a>
+
+        <nav class="header-nav" id="header-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li>
+                    <a href="#favorite-coffee">Favorite coffee</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#mobile-app">Mobile app</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contact us</a>
+                </li>
+            </ul>
+
+            <a href="menu.html" class="menu-page">Menu</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false">
+                <span class="theme-light" aria-hidden="true"></span>
+                <span class="theme-dark" aria-hidden="true"></span>
+            </button>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="header-nav"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video
+                autoplay
+                preload="metadata"
+                muted
+                loop
+                playsinline
+                poster="assets/images/img-hero.jpg"
+                aria-hidden="true">
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-content">
+                <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
+
+                <p>
+                    With its inviting atmosphere and delicious coffee options,
+                    the Coffee House Resource is a popular destination for coffee
+                    lovers and those seeking a warm and inviting space to enjoy
+                    their favorite beverage.
+                </p>
+
+                <a href="menu.html">Menu</a>
+            </div>
+        </section>
+
+        <section class="favorite-coffee" id="favorite-coffee">
+            <h2>Choose your <span>favorite</span> coffee</h2>
+
+            <div class="slider">
+                <button class="slider-prev" type="button" aria-label="Previous coffee">
+                </button>
+
+                <div class="slider-window">
+                    <div class="slider-track">
+                        <article>
+                            <img src="assets/images/coffee-slider-1.png" alt="S’mores Frappuccino topped with foam" loading="lazy">
+                            <h3>S’mores Frappuccino</h3>
+                            <p>
+                                This new drink takes an espresso and mixes it with brown sugar
+                                and cinnamon before being topped with oat milk.
+                            </p>
+                            <p class="price">$5.50</p>
+                        </article>
+
+                        <article>
+                            <img src="assets/images/coffee-slider-2.png" alt="Caramel Macchiato in a glass cup" loading="lazy">
+                            <h3>Caramel Macchiato</h3>
+                            <p>
+                                Fragrant and unique classic espresso with rich caramel-peanut
+                                syrup, with cream under whipped thick foam.
+                            </p>
+                            <p class="price">$5.00</p>
+                        </article>
+
+                        <article>
+                            <img src="assets/images/coffee-slider-3.png" alt="Ice coffee in a tall glass with ice cubes" loading="lazy">
+                            <h3>Ice coffee</h3>
+                            <p>
+                                A popular summer drink that tones and invigorates.
+                                Prepared from coffee, milk and ice.
+                            </p>
+                            <p class="price">$4.50</p>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="slider-next" type="button" aria-label="Next coffee">
+                </button>
+            </div>
+
+            <div class="slider-indicators" aria-hidden="true">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>
+                Resource is <span>the perfect and cozy place</span> where you can enjoy
+                a variety of hot beverages, relax, catch up with friends, or get some work done.
+            </h2>
+
+            <div class="about-gallery">
+                <div>
+                    <figure>
+                        <img src="assets/images/about-1.jpg" alt="A woman stirring her coffee by the cafe window" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="assets/images/about-2.jpg" alt="A cup of coffee on a table with warm decorative lights" loading="lazy">
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="assets/images/about-3.jpg" alt="A man enjoying coffee while using a laptop in the cafe" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="assets/images/about-4.jpg" alt="A couple sharing a coffee break at an outdoor table" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile-app" id="mobile-app">
+            <div class="mobile-app-content">
+                <h2><span>Download</span> our app to start ordering</h2>
+
+                <p>
+                    Download the Resource app today and experience the comfort of ordering
+                    your favorite coffee from wherever you are
+                </p>
+
+                <div class="app-links">
+                    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+                        <span>
+                            <small>Available on the</small>
+                            <strong>App Store</strong>
+                        </span>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+                        <span>
+                            <small>Available on</small>
+                            <strong>Google Play</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <img src="assets/images/mobile-screens.png" alt="Two phone screens showing the Resource coffee ordering app" loading="lazy">
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-offer">
+            <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+
+            <div class="social-links">
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-contacts">
+            <h2>Contact us</h2>
+
+            <ul class="contact-list">
+                <li>
+                    <a href="https://www.google.com/maps?q=8558+Green+Rd,+Los+Angeles" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/pin-alt.svg" alt="">
+                        <span>8558 Green Rd., LA</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+16035550123">
+                        <img src="assets/icons/phone.svg" alt="">
+                        <span>+1 (603) 555-0123</span>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="assets/icons/clock.svg" alt="">
+                    <span>Mon–Sat: 9:00–23:00</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
