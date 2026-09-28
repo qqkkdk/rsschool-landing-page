@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Inter";
-    src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/rsms/inter@v3.19/docs/font-files/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Inter";
-    src: url('../assets/fonts/Inter-SemiBold.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/rsms/inter@v3.19/docs/font-files/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Inter";
-    src: url('../assets/fonts/Inter-SemiBoldItalic.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/rsms/inter@v3.19/docs/font-files/Inter-SemiBoldItalic.woff2') format('woff2');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -1021,7 +1021,7 @@ html.modal-open {
     }
 
     .about-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .about-gallery > div:first-child figure:last-child,
@@ -1032,6 +1032,7 @@ html.modal-open {
     .show-more {
         display: grid;
     }
+
     .header {
         position: relative;
         z-index: 10;
