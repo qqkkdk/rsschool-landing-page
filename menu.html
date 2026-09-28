@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/icons/coffee-cup.svg" type="image/svg+xml">
     <script src="js/header.js" defer></script>
+    <script type="module" src="js/menu.js"></script>
 </head>
 <body>
     <header class="header">
@@ -56,99 +57,13 @@
                 <button type="button" data-category="dessert" aria-pressed="false"><span><img src="assets/icons/category-dessert.svg" alt=""></span>Dessert</button>
             </div>
 
-            <div class="product-grid">
-                <button class="product-card" type="button" aria-label="View Irish coffee">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-1.jpg" alt="Irish coffee" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Irish coffee</span>
-                        <span>Fragrant black coffee with Jameson Irish whiskey and whipped milk</span>
-                        <span class="price">$7.00</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Kahlua coffee">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-2.jpg" alt="Kahlua coffee" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Kahlua coffee</span>
-                        <span>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</span>
-                        <span class="price">$7.00</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Honey raf">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-3.jpg" alt="Honey raf" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Honey raf</span>
-                        <span>Espresso with frothed milk, cream and aromatic honey</span>
-                        <span class="price">$5.50</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Ice cappuccino">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-4.jpg" alt="Ice cappuccino" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Ice cappuccino</span>
-                        <span>Cappuccino with soft thick foam in summer version with ice</span>
-                        <span class="price">$5.00</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Espresso">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-5.jpg" alt="Espresso" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Espresso</span>
-                        <span>Classic black coffee</span>
-                        <span class="price">$4.50</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Latte">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-6.jpg" alt="Latte" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Latte</span>
-                        <span>Espresso coffee with the addition of steamed milk and dense milk foam</span>
-                        <span class="price">$5.50</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Latte macchiato">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-7.jpg" alt="Latte macchiato" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Latte macchiato</span>
-                        <span>Espresso with frothed milk and chocolate</span>
-                        <span class="price">$5.50</span>
-                    </span>
-                </button>
-
-                <button class="product-card" type="button" aria-label="View Coffee with cognac">
-                    <span class="product-image">
-                        <img src="assets/images/coffee-8.jpg" alt="Coffee with cognac" loading="lazy">
-                    </span>
-                    <span class="product-description">
-                        <span class="product-name">Coffee with cognac</span>
-                        <span>Fragrant black coffee with cognac and whipped cream</span>
-                        <span class="price">$6.50</span>
-                    </span>
-                </button>
-            </div>
+            <div class="product-grid"></div>
 
             <button class="show-more" type="button" aria-label="Show more products"></button>
         </section>
     </main>
+
+    <dialog class="product-dialog" aria-label="Product details"></dialog>
 
     <footer class="footer" id="contacts">
         <div class="footer-offer">
